@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>PIDOM</title>
+</head>
+<body>
+    <h1>Welcome to PIDOM!</h1>
+    <p>Your new micro-ERP is up and running.</p>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out"/>
+    </form>
+</body>
+</html>
