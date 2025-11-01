@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: pidom
+    env: docker
+    # repo: https://github.com/your-username/your-repo.git # Replace with your repository URL
+    branch: main # Ou a branch que você deseja implantar
+    healthCheckPath: /
+    envVars:
+      - key: SERVER_PORT
+        value: 8080
